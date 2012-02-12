@@ -7,24 +7,56 @@
 		body {
 			margin: 0px;
 			font-family: sans-serif;
-			background-color: #743a00;}
+			background-color: #72522E;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		
 		#page {
-			background-color: #5dc6c6;
+			background-color: #74C2C5;
 			width: 800px;
-			margin: auto;}
+			margin: 5px auto 0px auto;
+			border-radius: 5px;
+		}
+		
+		header {
+			padding: 5px;
+			border-bottom: 1px dashed gray;
+		}
+			
+		header #social-links {
+			float: right;
+			width: 75px;
+		}
+		
+		article {
+			clear: both;
+		}
 
 		article.twosplit section {
-			width: 50%;
 			float: left;
+			width: 380px;
+			padding: 10px;
 		}
 		
 		article.twosplit section ul, article.threesplit section ul {
 			list-style: none;
 		}
 		
+		li {
+		margin: 5px 0px;
+		}
+		
 		article.threesplit section {
-			width: 33%;
+			width: 246px;
 			float: left;
+			padding: 10px;
+		}
+		
+		footer {
+			clear: both;
 		}
 	</style>
 	<link rel="stylesheet" href="scrach.css"/>
@@ -33,42 +65,59 @@
 <body>
 <div id="page">
 	<header>
-		<h1>Justin Turner Arthur</h1><span class="callout-link">Resume</span>
 		<div id="social-links">
-			<img src="http://placehold.it/32x32" alt="LinkedIn"/> <img src="http://placehold.it/32x32" alt="Twitter"/>
-			<img src="http://placehold.it/32x32" alt="Flickr" /> <img src="http://placehold.it/32x32" alt="GitHub"/>
+			<a href="http://www.linkedin.com/in/justintarthur" title="LinkedIn Profile"><img src="images/social-linkedin.png" alt="LinkedIn"/></a>
+			<a href="http://twitter.com/JustinTArthur" title="Personal Twitter Feed"><img src="images/social-twitter.png" alt="Twitter"/></a>
+			<a href="http://www.flickr.com/photos/justintarthur/" title="Photos Hosted by Flickr"><img src="images/social-flickr.png" alt="Flickr" /></a>
+			<a href="https://github.com/JustinTArthur" title="GitHub Profile"><img src="images/social-github.png" alt="GitHub"/></a>
 		</div>
+		<h1>Justin Turner Arthur</h1>
+		<span class="callout-link" id="portfolio_launcher">Portfolio</span>
+		<span class="callout-link"><a href="resume.pdf">Resume</a></span>
 	</header>
 	<article class="twosplit">
 		<section>
-			<h1>Work</h1>
-			<ul>
-				<li>Professional Web Development Portfolio</li>
-				<li>Projects:
-					<ul>
-						<li>Groupulator (Project Owner, Developer)</li>
-						<li>Beyond 6th (Editor, Audio Engineer)</li>
-						<li>Deep Structure Productions (Technology)</li>
-					</ul>
-				</li>
-			</ul>
+			<h1>Runs and Rides</h1>
+			<p>I'm an avid cyclist and occasionally a runner. Here are some recent treks:
+				<ul>
+					<li><a href="http://www.mapmyrun.com/workout/41081634">Statesman Capital 10k, 2011-03-27</a></li>
+					<li><a href="http://www.mapmyride.com/workout/70102728">Caffeine Cruise, 2011-02-26</a></li>
+				</ul>
+			</p>
 		</section>
 		<section>
 			<h1>Recent Open Source Contributions</h1>
 			<ul>
-				<li>Django commit</li>
-				<li>Django command extensions commit</li>
-				<li>ChatZilla SSL support commit</li>
+				<li><a href="https://code.djangoproject.com/changeset/16678">Fix for Django #15884 (primary key nulls)</a></li>
+				<li><a href="http://code.google.com/p/django-command-extensions/issues/detail?id=47#c3">Fix create_jobs in Django Command Extensions</a></li>
+				<li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=174087#c8">ChatZilla SSL support</a></li>
 			</ul>
 		</section>
-		<div style="clear:both;"></div>
 	</article>
 	<article class="threesplit">
-		<section><h1>Adventures</h1></section>
-		<section><h1>Recent Listens</h1></section>
-		<section><h1>Recent Events</h1></section>
-		<div style="clear:both;"></div>
+		<section>
+			<h1><a href="http://beyond6th.com/">Beyond 6th</a></h1>
+			<p>I do the audio production and some commentary for Beyond 6th, Austin's Weekly Podcast</p>
+		</section>
+		<section>
+			<h1><a href="https://market.android.com/details?id=com.justinarthur.groupcoupon">Groupulator</a></h1>
+			<p>An Android app that makes the complicated process of splitting the bill when someone's contributed a coupon. Written natively for Android devices in Java.</p>
+		</section>
+		<section>
+			<h1><a href="http://flakydate.justinarthur.com/">FlakyDate</a></h1>
+			<p>A simple website for re-arranging your Flickr photostream by adjusting photo upload dates. An <a href="https://github.com/JustinTArthur/FlakyDate">open source</a> project written in Python, Django, and HTML</p> 
+		</section>
 	</article>
+	<article class="threesplit">
+		<section>
+			<h1><a href="http://deepstructure.com/">Deep Structure Productions</a></h1>
+			<p>This is a group of friends that produces video content. My role has primarily been on the tech side.</p>
+		</section>
+		<section><h1>Recent Listens</h1>
+			<a href="http://www.last.fm/user/JustinTArthur/?chartstyle=SidebarBlue"><img src="http://imagegen.last.fm/SidebarBlue/recenttracks/JustinTArthur.gif" border="0" alt="JustinTArthur's Profile Page" /></a> 
+		</section>
+	</article>
+	<footer></footer>
 </div>
 </body>
 </html>
