@@ -7,7 +7,7 @@
 		body {
 			margin: 0px;
 			font-family: sans-serif;
-			background-color: #72522E;
+			background-color: #82AA6E;
 		}
 		
 		a {
@@ -15,7 +15,7 @@
 		}
 		
 		#page {
-			background-color: #74C2C5;
+			background-color: #EEFFEE;
 			width: 800px;
 			margin: 5px auto 0px auto;
 			border-radius: 5px;
@@ -24,6 +24,19 @@
 		header {
 			padding: 5px;
 			border-bottom: 1px dashed gray;
+		}
+		
+		header #main-menu {
+			/* clear: both; */
+		}
+		
+		header img {
+			float: left;
+		}
+		
+		header #title_and_links {
+			float: left;
+			margin-left: 5px;
 		}
 			
 		header #social-links {
@@ -58,28 +71,50 @@
 		footer {
 			clear: both;
 		}
+		
+		/* For modern browsers */
+		.floatful_container:before,
+		.floatful_container:after {
+		    content:"";
+		    display:table;
+		}
+		
+		.floatful_container:after {
+		    clear:both;
+		}
+		
+		/* For IE 6/7 (trigger hasLayout) */
+		.floatful_container {
+		    zoom:1;
+		}
 	</style>
 	<link rel="stylesheet" href="scrach.css"/>
 	<script type="text/javascript" src="modernizr-2.0.6.js"></script>
 </head>
 <body>
 <div id="page">
-	<header>
+	<header class="floatful_container">
+		<img src="images/justin_t_arthur-avatar.jpg" />
+		<div id="title_and_links">
+			<h1>Justin Turner Arthur</h1>
+			<div id="main-menu">
+		 		<span class="callout-link" id="portfolio_launcher">Portfolio</span>
+				<span class="callout-link"><a href="resume.pdf">Resume</a></span>
+			</div>
+		</div>
 		<div id="social-links">
 			<a href="http://www.linkedin.com/in/justintarthur" title="LinkedIn Profile"><img src="images/social-linkedin.png" alt="LinkedIn"/></a>
 			<a href="http://twitter.com/JustinTArthur" title="Personal Twitter Feed"><img src="images/social-twitter.png" alt="Twitter"/></a>
 			<a href="http://www.flickr.com/photos/justintarthur/" title="Photos Hosted by Flickr"><img src="images/social-flickr.png" alt="Flickr" /></a>
 			<a href="https://github.com/JustinTArthur" title="GitHub Profile"><img src="images/social-github.png" alt="GitHub"/></a>
 		</div>
-		<h1>Justin Turner Arthur</h1>
-		<span class="callout-link" id="portfolio_launcher">Portfolio</span>
-		<span class="callout-link"><a href="resume.pdf">Resume</a></span>
 	</header>
-	<article class="twosplit">
+	<article class="twosplit first_row">
 		<section>
 			<h1>Runs and Rides</h1>
-			<p>I'm an avid cyclist and occasionally a runner. Here are some recent treks:
+			<p>I'm an avid cyclist and occasional a runner. Here are some recent treks:
 				<ul>
+					<li>Congress Avenue Mile</li>
 					<li><a href="http://www.mapmyrun.com/workout/41081634">Statesman Capital 10k, 2011-03-27</a></li>
 					<li><a href="http://www.mapmyride.com/workout/70102728">Caffeine Cruise, 2011-02-26</a></li>
 				</ul>
@@ -101,7 +136,7 @@
 		</section>
 		<section>
 			<h1><a href="https://market.android.com/details?id=com.justinarthur.groupcoupon">Groupulator</a></h1>
-			<p>An Android app that makes the complicated process of splitting the bill when someone's contributed a coupon. Written natively for Android devices in Java.</p>
+			<p>An Android app that simplifies the complicated process of splitting the bill when someone's contributed a coupon. Written natively for Android devices in Java.</p>
 		</section>
 		<section>
 			<h1><a href="http://flakydate.justinarthur.com/">FlakyDate</a></h1>
